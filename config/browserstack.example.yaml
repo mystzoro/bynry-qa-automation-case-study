@@ -1,0 +1,42 @@
+# Single source of truth for the browser/device matrix (docs/case-study-solution.md,
+# Section 3.4). Consumed conceptually by both local Playwright runs (chromium,
+# firefox) and BrowserStack sessions (real Safari, real mobile devices).
+#
+# WebKit note: Playwright's local WebKit gives fast feedback but is not the
+# same build as Apple's Safari — real Safari coverage below runs through
+# BrowserStack, not local WebKit.
+
+web:
+  chromium:
+    target: local
+    browserName: chrome
+  firefox:
+    target: local
+    browserName: firefox
+  webkit_local:
+    target: local
+    browserName: webkit
+    note: "Fast local signal only — not a substitute for real Safari."
+  safari_browserstack:
+    target: browserstack
+    browserName: safari
+    os: OS X
+    osVersion: Sonoma
+
+mobile:
+  iphone_14:
+    target: browserstack
+    deviceName: iPhone 14
+    osVersion: "16"
+    realMobile: "true"
+    browserName: safari
+  pixel_7:
+    target: browserstack
+    deviceName: Google Pixel 7
+    osVersion: "13"
+    realMobile: "true"
+    browserName: chrome
+
+project:
+  projectName: WorkFlow Pro QA
+  buildName: local-build

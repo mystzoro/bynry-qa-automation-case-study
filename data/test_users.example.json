@@ -1,0 +1,12 @@
+{
+  "company1_admin": {
+    "email": "company1-admin@example.com",
+    "password": "${COMPANY1_ADMIN_PASSWORD}",
+    "requires_2fa": false
+  },
+  "company2_user": {
+    "email": "company2-user@example.com",
+    "password": "${COMPANY2_USER_PASSWORD}",
+    "requires_2fa": true
+  }
+}

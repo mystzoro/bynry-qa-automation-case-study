@@ -1,0 +1,7 @@
+{
+  "sample_project": {
+    "name": "QA Integration Test Project {run_id}",
+    "description": "Created by automated integration test — safe to delete.",
+    "team_members": ["qa.bot@company1.com"]
+  }
+}
