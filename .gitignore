@@ -1,12 +1,92 @@
+# Environment & Secrets
 .env
+.env.local
+.env.*.local
+
+# Python
 .venv/
 venv/
+ENV/
+env/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# pytest
 .pytest_cache/
-.ruff_cache/
+.pytest_tmp/
 test-results/
-reports/generated/
-*.log
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Code Quality
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Reports & Artifacts
+reports/generated/
+reports/*.html
+reports/*.xml
+*.log
+logs/
+
+# Test Artifacts
+.playwright/
+screenshots/
+videos/
+traces/
+
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+._*
+
+# Node (if applicable)
 node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.#*
